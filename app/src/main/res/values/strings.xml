@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DocGContratos</string>
+    <string name="name_project">DocG-Seguros!</string>
+    <string name="login">Login</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="msg_login">Usuário ou senha não conferem.</string>
+    <string name="cadastro">Cadastro de Usuário</string>
+    <string name="nome">Nome Completo</string>
+    <string name="cpf">CPF (Somente números)</string>
+    <string name="data_nasc">Data de Nascimento</string>
+    <string name="selecione">Selecione</string>
+    <string name="sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="telefone">Telefone ( apenas números com DDD (2 dígitos))</string>
+    <string name="mail">E-mail</string>
+    <string name="cadastrar">Cadastrar</string>
+</resources>

@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="docgcontratos.projeto.app.com.br.docgcontratos">
+
+    <uses-permission android:name="android.permission."></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>//permissão de uso da internet
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>//permissão de uso do wi-fi
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>//permissão de alterar o estado de conectividade do WI-FI
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>//permite armazenar externamente
+    <uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>//permissão de leitura do calendário
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>//permissão de leitura de contatos
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>//permite ler um armazenamento externo
+
+    <uses-library android:name="com.google.android.maps" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"></uses-feature>
+    <uses-sdk android:minSdkVersion="10"/>
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDA7mitm9r0LHIbojgcgARPT-AVesrE-5c"/>chave de licença google maps-->
+
+    </application>
+
+</manifest>

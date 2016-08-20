@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    //Nome do app
+    <TextView
+        android:id="@+id/nome_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_project"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/vermelhoEscuro"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="170px"/>
+
+            //cadastro de usuário
+    <TextView
+        android:id="@+id/cadastro_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Usuário"
+        android:textColor="@color/preto"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/nome_app"
+        android:layout_alignLeft="@+id/nome_app"
+        android:layout_alignStart="@+id/nome_app"
+        android:layout_alignEnd="@+id/nome_app"
+        android:layout_marginTop="10dp"/>
+
+            //Receber o nome de usuário
+    <TextView
+        android:id="@+id/tvRecebeNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome de Usuário:"
+        android:textColor="@color/preto"
+        android:textSize="16dp"
+        android:layout_below="@+id/cadastro_usuario"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/etRecebeNick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Digite um Nick"
+        android:singleLine="true"
+        android:textColorHint="@color/cinzaEnegrecido"
+        android:layout_below="@+id/tvRecebeNick"/>
+
+            //Receber nome completo
+    <TextView
+        android:id="@+id/tvRecebeNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Completo:"
+        android:textColor="@color/preto"
+        android:textSize="16dp"
+        android:layout_below="@+id/etRecebeNick"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/etRecebeNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Digite seu Nome"
+        android:singleLine="true"
+        android:textColorHint="@color/cinzaEnegrecido"
+        android:layout_below="@+id/tvRecebeNome"
+        android:inputType="text"/>
+
+            //receber senha
+        <TextView
+            android:id="@+id/tvRecebeSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digite uma Senha:"
+            android:textColor="@color/preto"
+            android:textSize="16dp"
+            android:layout_below="@+id/etRecebeNome"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/etRecebeSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:hint="Digite uma Senha"
+            android:textColorHint="@color/cinzaEnegrecido"
+            android:layout_below="@+id/tvRecebeSenha"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:maxLength="8"/>
+
+            //repetir a senha
+        <TextView
+                android:id="@+id/tvRepeteSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repita a Senha:"
+                android:textColor="@color/preto"
+                android:textSize="16dp"
+                android:layout_below="@+id/etRecebeSenha"
+                android:layout_marginTop="10dp"/>
+        <EditText
+                android:id="@+id/etRepeteSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Repita a Senha"
+                android:textColorHint="@color/cinzaEnegrecido"
+                android:layout_below="@+id/tvRepeteSenha"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLength="8"/>
+
+            //recebe o CPF do usuário
+            <TextView
+                android:id="@+id/tvRecebeCpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cpf"
+                android:textSize="16dp"
+                android:textColor="@color/preto"
+                android:layout_below="@+id/etRepeteSenha"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/etRecebeCpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/cinzaEnegrecido"
+                android:singleLine="true"
+                android:phoneNumber="true"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_below="@+id/tvRecebeCpf"/>
+
+            //selecinar a data de nascimento
+            <LinearLayout
+                android:id="@+id/SelecionarData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etRecebeCpf">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_nasc"
+                    android:textSize="16dp"
+                    android:textColor="@color/preto"
+                    android:layout_marginTop="10px"
+                    android:layout_marginLeft="10px"/>
+
+                <Button
+                    android:id="@+id/btn_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selecione"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="10px"
+                    android:onClick="selecionarData"/>
+            </LinearLayout>
+
+            //selecionar o sexo
+            <LinearLayout
+                android:id="@+id/SelecionarSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/SelecionarData">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sexo"
+                    android:textSize="16dp"
+                    android:textColor="@color/preto"
+                    android:layout_marginTop="10px"
+                    android:layout_marginLeft="10px"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sexo_fem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feminino"
+                        android:textColor="@color/preto"/>
+
+                    <RadioButton
+                        android:id="@+id/sexo_masc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/masculino"
+                        android:textColor="@color/preto"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            //inserir telefone
+            <TextView
+                android:id="@+id/tvRecebeFone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefone"
+                android:textSize="16dp"
+                android:textColor="@color/preto"
+                android:layout_below="@+id/SelecionarSexo"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/etRecebeFone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/cinzaEnegrecido"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:phoneNumber="true"
+                android:layout_below="@+id/tvRecebeFone"/>
+
+            //inserir e-mail
+            <TextView
+                android:id="@+id/tvRecebeEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mail"
+                android:textSize="16dp"
+                android:textColor="@color/preto"
+                android:layout_below="@+id/etRecebeFone"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/etRecebeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/cinzaEnegrecido"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_below="@+id/tvRecebeEmail"/>
+
+            //BT cadastrar
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cadastrar"
+                android:layout_marginTop="15px"
+                android:layout_below="@+id/etRecebeEmail"
+                android:onClick="cadastro"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

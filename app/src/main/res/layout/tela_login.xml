@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/branco">
+
+    //Nome do app
+    <TextView
+        android:id="@+id/nome_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_project"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/vermelhoEscuro"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110px"
+        android:layout_marginLeft="170px"/>
+
+
+    //receber usuário de login
+        <EditText
+            android:id="@+id/usuario_login"
+            android:layout_width="350dp"
+            android:layout_height="62dp"
+            android:background="@color/cinza"
+            android:textColorHint="@color/azulClaro"
+            android:textColorLink="@color/azulClaro"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="LOGIN"
+            android:drawableLeft="@drawable/user_gray4"
+            android:layout_marginTop="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/nome_app"
+            android:layout_alignRight="@+id/btEntrar"
+            android:layout_alignEnd="@+id/btEntrar"
+            android:layout_alignLeft="@+id/btEntrar"
+            android:layout_alignStart="@+id/btEntrar" />
+
+    //receber senha de login
+    <EditText
+        android:id="@+id/senha_login"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:background="@color/cinzaEscuro"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:maxLength="8"
+        android:hint="SENHA"
+        android:textColorHint="@color/azulClaro"
+        android:textColorLink="@color/azulClaro"
+        android:drawableLeft="@drawable/key_gray2"
+        android:layout_below="@+id/usuario_login"
+        android:layout_alignLeft="@+id/usuario_login"
+        android:layout_alignStart="@+id/usuario_login"
+        android:layout_marginTop="40px"
+        android:layout_alignRight="@+id/usuario_login"
+        android:layout_alignEnd="@+id/usuario_login" />
+    //SigleLine não permite quebra de linha
+    //input type = tipo de entrada aceita
+
+    <Button
+        android:id="@+id/btEntrar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/senha_login"
+        android:layout_marginTop="50px"
+        android:background="@color/brancoGelo"
+        android:text="ENTRAR"
+        android:textColor="@color/cinzaEnegrecido"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/facebook_login"
+        android:layout_below="@+id/btEntrar"
+        android:layout_alignLeft="@+id/btEntrar"
+        android:layout_alignStart="@+id/btEntrar"
+        android:layout_alignParentTop="@+id/btEntrar"
+        android:layout_alignEnd="@+id/btEntrar"
+        android:layout_marginTop="40px"
+        android:id="@+id/entrarFace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/esqueci_senha"
+        android:textSize="15dp"
+        android:textColor="@color/preto"
+        android:text="Esqueceu a Senha?"
+        android:layout_gravity="center|bottom"
+        android:clickable="true"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/entrarFace"
+        android:layout_alignLeft="@+id/senha_login"
+        android:layout_alignStart="@+id/senha_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/criar_conta"
+        android:textSize="15dp"
+        android:textColor="@color/preto"
+        android:text="Criar Nova Conta"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/esqueci_senha"
+        android:layout_alignLeft="@+id/esqueci_senha"
+        android:layout_alignStart="@+id/esqueci_senha"/>
+
+    <CheckBox
+        android:layout_width="168dp"
+        android:layout_height="30dp"
+        android:text="Gravar Dados"
+        android:textColor="@color/preto"
+        android:textStyle="bold"
+        android:id="@+id/chkGravar"
+        android:layout_gravity="right|bottom"
+        android:layout_alignBottom="@+id/esqueci_senha"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
